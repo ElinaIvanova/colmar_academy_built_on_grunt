@@ -16,52 +16,46 @@ module.exports = function(grunt) {
         },
 
         sass: {
-            dist: {
+            dev: {
                 options: {
-                    style: 'expanded',
-                    nospawn: false
+                    outputstyle: 'expanded'
                 },
-
                 files: {
                     'dist/css/index.css' : 'src/sass/index.sass'
                 }
             },
-
-            fin: {
+            build: {
                 options: {
-                    style: 'compressed',
-                    nospawn: false
+                    outputstyle: 'compressed'
                 },
-
                 files: {
                     'dist/css/index.css' : 'src/sass/index.sass'
                 }
             }
         },
 
+
         watch: {
-            pug: {
+            html: {
                 files: 'src/**/*.pug',
                 tasks: ['pug']
             },
 
             css: {
                 files: 'src/sass/**/*.sass',
-                tasks: ['sass:dist']
+                tasks: ['sass']
             },
 
             options: {
                 livereload: true,
                 nospawn: false
             }
-        },
-
-
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-pug');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
 
-    //grunt.registerTask('default', ['pug', 'sass' 'watch:css']);
+    grunt.registerTask('default', ["pug", "sass", "watch"]);
 };

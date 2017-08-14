@@ -1,0 +1,520 @@
+/*** Universal Selectors **
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  font-size: 16px
+  font-family: "Lato", sans-serif
+
+a
+  cursor: pointer
+
+img
+  object-position: center
+  transition: all 0.65s ease-in-out 0.01s
+  &:hover
+    transform: scale(1.05)
+    opacity: 0.75
+    transition: all 0.5s ease-in-out 0.01s
+
+/* Desktop Layout
+
+/* Header Navigation Styling
+
+header
+  height: 4rem
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  position: fixed
+  z-index: 5
+  background-color: rgba(255, 255, 255, 0.9)
+  box-shadow: 0 1px 5px darkgray
+
+.logo
+  margin-left: 1.5rem
+  display: flex
+  justify-content: space-between
+  align-items: center
+  p
+    text-transform: capitalize
+  strong
+    font-weight: 600
+    color: #27BABA
+  img
+    /*height: 100%;
+    heigth: auto
+
+.desktop
+  ul
+    height: 100%
+    margin-right: 1.5rem
+    display: flex
+    justify-content: space-between
+    align-items: center
+  li
+    margin-left: 1rem
+  a:hover
+    text-decoration: underline #2FE0E0
+    color: #2FE0E0
+
+nav.mobile
+  display: none
+
+/* Jumbotron Styling
+
+.jumbotron
+  position: relative
+  top: 4rem
+  padding: 2rem 1.5rem
+  background-color: rgb(235, 235, 235)
+  .content
+    display: flex
+    flex-direction: row
+    align-items: center
+
+.image
+  /*width: 60%;
+  flex: 1.5 1.5 60%
+  max-height: 32rem
+  /*height: 32rem;
+  margin-right: 2.5rem
+  overflow: hidden
+  img
+    width: 100%
+
+.text
+  /*display: block;
+  /*width: 27%;
+  flex: 1 1 40%
+  letter-spacing: 0.005rem
+  word-spacing: 0.025rem
+  /*text-align: ;
+  h1
+    font-weight: bold
+    font-size: 2.5rem
+    line-height: 3rem
+    margin-bottom: 2rem
+
+.jumbotron .text p
+  font-weight: 500
+  font-size: 1rem
+  margin-bottom: 2rem
+  line-height: 1.5rem
+  text-align: justify
+
+.text a
+  display: block
+  padding: 0.5rem
+  border-radius: 5px
+  background-color: #27BABA
+  color: white
+  font-size: 1rem
+  font-weight: 300
+  /*text-transform: uppercase;
+  text-align: center
+  width: 80%
+
+.jumbotron .text a:hover
+  background-color: #2FE0E0
+  box-shadow: 4px 4px 15px darkgray, -4px 4px 15px darkgray
+
+/* Info Section Styling
+
+.info
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+  position: relative
+  top: 4rem
+
+.main-info
+  flex: 1.5 1.5 60%
+  padding: 2rem 1.5rem
+  transition: background-color 0.75s ease-in-out
+  .figure
+    width: 100%
+    /*height: 65%;
+    max-height: 22rem
+    overflow: hidden
+    img
+      width: 100%
+      height: auto
+      margin-bottom: 2rem
+  .text
+    width: 100%
+    margin-top: 2rem
+    h2
+      font-size: 2rem
+      font-weight: bold
+      margin-bottom: 1.5rem
+
+.text > p
+  font-weight: normal
+  font-size: 0.75rem
+  margin-bottom: 2rem
+  line-height: 1.5rem
+
+p.quote-author
+  margin-bottom: 0
+  font-size: 0.75rem
+
+.side-info
+  display: flex
+  flex-direction: column
+  flex: 1 1 40%
+
+.info-item
+  width: 100%
+  height: 10.5rem
+  display: flex
+  flex-direction: row
+  padding: 1rem
+  border-bottom: 1px solid rgb(235, 235, 235)
+  border-left: 1px solid rgb(235, 235, 235)
+  transition: background-color 0.75s ease-in-out
+  overflow: hidden
+  &:first-of-type
+    padding-top: 2rem
+  &:hover
+    background-color: rgba(47, 224, 224, 0.05)
+  .image
+    flex: 1 1 35%
+    height: 100%
+    margin-right: 1rem
+    overflow: hidden
+    img
+      width: 100%
+      height: auto
+  .text
+    flex: 1.5 1.5 60%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    h3
+      font-size: 1rem
+      font-weight: 600
+      margin-bottom: 0.5rem
+    p
+      font-size: 0.75rem
+      font-weight: 300
+      margin-bottom: 0.5rem
+    a
+      display: inline
+      padding: 0rem
+      background-color: transparent
+      color: #27BABA
+      font-size: 0.75rem
+      font-weight: normal
+      text-align: left
+      width: auto
+      &:hover
+        color: #2FE0E0
+        text-decoration: underline #2FE0E0
+
+/* Courses Section Styling
+
+.courses
+  position: relative
+  top: 4rem
+  .content
+    padding: 2rem
+    background-color: rgb(235, 235, 235)
+    > h1
+      font-size: 2rem
+      font-weight: bolder
+      margin-bottom: 2rem
+      text-align: center
+
+.courses-list
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  justify-content: center
+  align-items: center
+
+.course-item
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
+  background-color: white
+  margin-right: 2rem
+  margin-bottom: 2rem
+  height: 20rem
+  flex: 1 1 30%
+  &:hover
+    box-shadow: 4px 4px 20px darkgray, -4px 4px 20px darkgray
+  .image
+    width: 100%
+    overflow: hidden
+    img
+      width: 100%
+  .text
+    padding: 1rem
+    width: 100%
+    > h2
+      margin-bottom: 0.5rem
+    a.course-anchor
+      display: inline
+      padding: 0
+      border-radius: 0
+      background-color: transparent
+      color: #27BABA
+      font-size: 1rem
+      font-weight: bold
+      text-align: left
+      width: auto
+      &:visited
+        display: inline
+        padding: 0
+        border-radius: 0
+        background-color: transparent
+        color: #27BABA
+        font-size: 1rem
+        font-weight: bold
+        text-align: left
+        width: auto
+      &:hover
+        text-decoration: underline #2FE0E0
+        color: #2FE0E0
+    > p
+      font-size: 0.75rem
+      margin-bottom: 0.5rem
+    p.label
+      text-transform: uppercase
+      color: gray
+      font-size: 0.75rem
+
+/* Thesis Section Styling
+
+.thesis
+  position: relative
+  top: 4rem
+  padding: 2rem 0
+  h1
+    font-size: 2rem
+    font-weight: bolder
+    margin-bottom: 2rem
+    text-align: center
+  .content
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+  .main-info
+    padding: 0 1rem 0 1.5rem
+    .figure
+      width: 100%
+      max-height: 25rem
+      overflow: hidden
+      video
+        width: 100%
+        height: auto
+        object-fit: contain
+    .text
+      margin-top: 1.5rem
+
+h3.video-caption
+  font-size: 2rem
+  font-weight: bold
+
+.thesis
+  .main-info .text p
+    margin-top: 1.5rem
+  .side-info .info-item
+    border-style: none
+  .info-item
+    &:first-of-type
+      padding-top: 1rem
+    .text p
+      margin-bottom: 0
+
+/* Footer Section Styling
+
+footer
+  position: relative
+  top: 4rem
+  height: 4rem
+  border-top: 1px solid lightgray
+  padding: 0 1.5rem
+  display: flex
+  justify-content: space-between
+  align-items: center
+  font-size: 0.75rem
+  > ul
+    display: flex
+    flex-direction: row
+    height: 100%
+    align-items: center
+    > li
+      margin-left: 1rem
+
+@media only screen and (max-width: 900px) and (min-width: 767px)
+  html
+    font-size: 15px
+  .text h1
+    font-size: 2rem
+  .main-info
+    .text
+      h2
+        font-size: 1.75rem
+      > p
+        font-size: 1rem
+    p.quote-author
+      font-size: 0.75rem
+
+@media only screen and (max-width: 768px) and (min-width: 511px)
+  html
+    font-size: 14px
+  .text h1
+    font-size: 2rem
+  .main-info
+    .text h2
+      font-size: 1.75rem
+    &.text > p
+      font-size: 1rem
+    p.quote-author
+      font-size: 0.75rem
+
+@media only screen and (max-width: 510px)
+  .logo, .desktop
+    display: none
+  nav.mobile
+    width: 100%
+    height: 100%
+    display: flex
+    > ul
+      width: 100%
+      height: 100%
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      align-items: center
+    ul img
+      height: 100%
+  /** Jumbotron Mobile Styling *
+  .jumbotron
+    padding: 0
+    .content
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+  .image
+    width: 100%
+    height: 10rem
+    margin-right: 0
+    margin-bottom: 2rem
+    img
+      width: 100%
+      height: auto
+  .text
+    width: 100%
+    padding: 0 1rem
+    h1
+      margin-bottom: 2rem
+      font-size: 2rem
+    p
+      font-size: 1rem
+      margin-bottom: 1.5rem
+  .jumbotron .text > a
+    margin-bottom: 2rem
+    width: 100%
+  /* Info Section Styling
+  .info
+    position: relative
+    top: 4rem
+  .main-info
+    display: none
+  .side-info
+    width: 100%
+    .info-item
+      display: flex
+      flex-direction: column
+      border-style: none
+      height: auto
+      &:first-of-type
+        padding-top: 1rem
+      .image
+        width: 100%
+        height: 10.5rem
+        margin-right: 0
+        margin-bottom: 0
+        overflow: hidden
+      .text
+        width: 100%
+        padding: 1rem 1rem 0 1rem
+  /** Mobile Courses Styling *
+  .courses .content
+    padding: 1rem
+    background-color: white
+    border-top: 1px solid lightgray
+    > h1
+      font-size: 1.5rem
+      margin-bottom: 1rem
+  .courses-list
+    flex-wrap: nowrap
+    flex-direction: column
+  .course-item
+    flex-direction: column
+    flex-wrap: nowrap
+    width: 100%
+    background-color: transparent
+    margin-right: 0
+    margin-bottom: 0.5rem
+    height: auto
+    .image
+      display: none
+    .text
+      padding: 0
+      >
+        h2
+          font-size: 1rem
+          padding: 1rem
+          width: 100%
+          font-weight: normal
+          background-color: rgb(235, 235, 235)
+          margin-bottom: 0
+        p
+          display: none
+      p.label
+        display: none
+  /** Mobile Thesis Styling *
+  .thesis
+    padding: 2rem 0
+    border-top: 1px solid lightgray
+    height: auto
+    .content
+      flex-direction: column
+      height: auto
+    > h1
+      font-size: 1.5rem
+    .main-info
+      height: auto
+      width: 100%
+      padding: 0
+      transition-property: none
+      .figure
+        width: 100%
+        height: auto
+        padding: 0
+        video
+          /*** Needs Fixing **
+          width: 100%
+          height: auto
+          padding: 0
+  h3.video-caption
+    /*** Needs Fixing **
+    font-size: 1rem
+    font-weight: normal
+    /*margin-bottom: 1.5rem;
+  .thesis
+    .main-info .text > p
+      font-size: 0.75rem
+      margin-top: 1rem
+    .side-info
+      display: none
+  footer > ul
+    display: none
