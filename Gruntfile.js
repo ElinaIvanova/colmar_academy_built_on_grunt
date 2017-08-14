@@ -16,20 +16,20 @@ module.exports = function(grunt) {
         },
 
         sass: {
-            dev: {
+            src: {
                 options: {
                     style: 'expanded'
                 },
                 files: {
-                    'dist/css/index.css' : 'src/sass/index.sass'
+                    'dist/css/index.css' : 'src/sass/style.sass'
                 }
             },
-            build: {
+            dist: {
                 options: {
                     style: 'compressed'
                 },
                 files: {
-                    'dist/css/index.css' : 'src/sass/index.sass'
+                    'dist/css/index.css' : 'src/sass/style.sass'
                 }
             }
         },
