@@ -1,4 +1,4 @@
-/*** Universal Selectors **
+/*** Universal Selectors ***/
 
 *
   margin: 0
@@ -20,9 +20,9 @@ img
     opacity: 0.75
     transition: all 0.5s ease-in-out 0.01s
 
-/* Desktop Layout
+/*** Desktop Layout ***/
 
-/* Header Navigation Styling
+/*** Header Navigation Styling ***/
 
 header
   height: 4rem
@@ -46,8 +46,7 @@ header
     font-weight: 600
     color: #27BABA
   img
-    /*height: 100%;
-    heigth: auto
+    height: auto
 
 .desktop
   ul
@@ -65,7 +64,7 @@ header
 nav.mobile
   display: none
 
-/* Jumbotron Styling
+/*** Jumbotron Styling ***/
 
 .jumbotron
   position: relative
@@ -78,22 +77,17 @@ nav.mobile
     align-items: center
 
 .image
-  /*width: 60%;
   flex: 1.5 1.5 60%
   max-height: 32rem
-  /*height: 32rem;
   margin-right: 2.5rem
   overflow: hidden
   img
     width: 100%
 
 .text
-  /*display: block;
-  /*width: 27%;
   flex: 1 1 40%
   letter-spacing: 0.005rem
   word-spacing: 0.025rem
-  /*text-align: ;
   h1
     font-weight: bold
     font-size: 2.5rem
@@ -115,7 +109,6 @@ nav.mobile
   color: white
   font-size: 1rem
   font-weight: 300
-  /*text-transform: uppercase;
   text-align: center
   width: 80%
 
@@ -123,7 +116,7 @@ nav.mobile
   background-color: #2FE0E0
   box-shadow: 4px 4px 15px darkgray, -4px 4px 15px darkgray
 
-/* Info Section Styling
+/*** Info Section Styling ***/
 
 .info
   display: flex
@@ -138,7 +131,6 @@ nav.mobile
   transition: background-color 0.75s ease-in-out
   .figure
     width: 100%
-    /*height: 65%;
     max-height: 22rem
     overflow: hidden
     img
@@ -216,7 +208,7 @@ p.quote-author
         color: #2FE0E0
         text-decoration: underline #2FE0E0
 
-/* Courses Section Styling
+/*** Courses Section Styling ***/
 
 .courses
   position: relative
@@ -289,7 +281,7 @@ p.quote-author
       color: gray
       font-size: 0.75rem
 
-/* Thesis Section Styling
+/*** Thesis Section Styling ***/
 
 .thesis
   position: relative
@@ -332,7 +324,7 @@ h3.video-caption
     .text p
       margin-bottom: 0
 
-/* Footer Section Styling
+/*** Footer Section Styling ***/
 
 footer
   position: relative
@@ -374,7 +366,7 @@ footer
   .main-info
     .text h2
       font-size: 1.75rem
-    &.text > p
+    .text > p
       font-size: 1rem
     p.quote-author
       font-size: 0.75rem
@@ -393,9 +385,9 @@ footer
       flex-direction: row
       justify-content: space-around
       align-items: center
-    ul img
-      height: 100%
-  /** Jumbotron Mobile Styling *
+      > img
+        height: 100%
+  /*** Jumbotron Mobile Styling ***/
   .jumbotron
     padding: 0
     .content
@@ -422,7 +414,7 @@ footer
   .jumbotron .text > a
     margin-bottom: 2rem
     width: 100%
-  /* Info Section Styling
+  /*** Info Section Styling **/
   .info
     position: relative
     top: 4rem
@@ -446,7 +438,7 @@ footer
       .text
         width: 100%
         padding: 1rem 1rem 0 1rem
-  /** Mobile Courses Styling *
+  /*** Mobile Courses Styling ***/
   .courses .content
     padding: 1rem
     background-color: white
@@ -469,19 +461,18 @@ footer
       display: none
     .text
       padding: 0
-      >
-        h2
-          font-size: 1rem
-          padding: 1rem
-          width: 100%
-          font-weight: normal
-          background-color: rgb(235, 235, 235)
-          margin-bottom: 0
-        p
-          display: none
+      > h2
+        font-size: 1rem
+        padding: 1rem
+        width: 100%
+        font-weight: normal
+        background-color: rgb(235, 235, 235)
+        margin-bottom: 0
+      > p
+        display: none
       p.label
         display: none
-  /** Mobile Thesis Styling *
+  /*** Mobile Thesis Styling ***/
   .thesis
     padding: 2rem 0
     border-top: 1px solid lightgray
@@ -501,15 +492,12 @@ footer
         height: auto
         padding: 0
         video
-          /*** Needs Fixing **
           width: 100%
           height: auto
           padding: 0
   h3.video-caption
-    /*** Needs Fixing **
     font-size: 1rem
     font-weight: normal
-    /*margin-bottom: 1.5rem;
   .thesis
     .main-info .text > p
       font-size: 0.75rem
